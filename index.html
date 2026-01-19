@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Learning Dashboard</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+<div class="app">
+
+  <aside class="sidebar" id="sidebar">
+    <h2 class="logo">Online Learning Platform</h2>
+    <nav>
+      <a class="active" data-page="dashboard">Dashboard</a>
+      <a data-page="grades">Grades</a>
+      <a data-page="class">Class</a>
+      <a data-page="groups">Groups</a>
+      <a data-page="administration">Administration</a>
+      <a data-page="departments">Departments</a>
+    </nav>
+  </aside>
+
+  <main class="main">
+    <section class="page active" id="dashboard">
+      <header class="topbar">
+        <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+        <div>
+          <p>Hello Deadlopers</p>
+          <h1>Your Dashboard Today</h1>
+        </div>
+      </header>
+
+      <section class="stats">
+        <div class="stat-box"><h4>Total Courses</h4><p class="big">27</p></div>
+        <div class="stat-box"><h4>Completed</h4><p class="big">24</p></div>
+        <div class="stat-box"><h4>Certificates</h4><p class="big">12</p></div>
+        <div class="stat-box"><h4>Avg Score</h4><p class="big">82%</p></div>
+      </section>
+
+      <section class="hero">
+        <div>
+          <h2>Creative Outdoor Ads</h2>
+          <p>Continue your active course.</p>
+          <div class="progress">
+            <div class="progress-bar" style="width:72%"></div>
+          </div>
+          <small>72% completed</small>
+        </div>
+        <button>Resume Course</button>
+      </section>
+
+      <section class="cards">
+        <div class="card">
+          <h3>Semester Performance</h3>
+          <canvas id="barChart"></canvas>
+        </div>
+        <div class="card">
+          <h3>Learning Distribution</h3>
+          <canvas id="pieChart"></canvas>
+        </div>
+      </section>
+    </section>
+
+    <section class="page" id="grades">
+      <h1>Grades Overview</h1>
+      <div class="card">
+        <table>
+          <tr><th>Subject</th><th>Credits</th><th>Grade</th></tr>
+          <tr><td>Mathematics</td><td>4</td><td>A</td></tr>
+          <tr><td>Programming</td><td>5</td><td>A+</td></tr>
+          <tr><td>Operating Systems</td><td>3</td><td>B+</td></tr>
+        </table>
+      </div>
+    </section>
+
+    <section class="page" id="class">
+      <h1>Class Overview</h1>
+      <div class="card">
+        <ul class="list">
+          <li>Total Students: 42</li>
+          <li>Present Today: 35</li>
+          <li>Attendance: 83%</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="page" id="groups">
+      <h1>Groups & Teams</h1>
+      <div class="group-grid" id="groupsContainer"></div>
+    </section>
+
+    <section class="page" id="administration">
+      <h1>Administration Panel</h1>
+
+      <section class="stats" id="adminStats"></section>
+
+      <div class="admin-grid">
+        <div class="card">
+          <h3>System Settings</h3>
+          <div id="adminSettings"></div>
+        </div>
+
+        <div class="card">
+          <h3>Roles & Permissions</h3>
+          <ul class="list" id="adminRoles"></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="page" id="departments">
+      <h1>Departments</h1>
+      <div class="card">
+        <ul class="list">
+          <li>Computer Science</li>
+          <li>Information Technology</li>
+          <li>Electronics</li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+{
+  "groups": [
+    {
+      "name": "Frontend Team",
+      "role": "UI Development",
+      "members": 8,
+      "progress": 80,
+      "leader": "Samarth Tiwari",
+      "tasks": [
+        "UI Design",
+        "Responsive Layout",
+        "Accessibility"
+      ]
+    },
+    {
+      "name": "Backend Team",
+      "role": "API & Database",
+      "members": 6,
+      "progress": 65,
+      "leader": "Shadiq Imran",
+      "tasks": [
+        "Authentication",
+        "API Integration",
+        "Database Design"
+      ]
+    },
+    {
+      "name": "AI Research",
+      "role": "Machine Learning",
+      "members": 5,
+      "progress": 45,
+      "leader": "Arman Khan",
+      "tasks": [
+        "Model Training",
+        "Data Analysis",
+        "Testing"
+      ]
+    },
+    {
+      "name": "Management Team",
+      "role": "Project Management",
+      "members": 4,
+      "progress": 90,
+      "leader": "Varsha Biswal",
+      "tasks": [
+        "Project Planning",
+        "Team Coordination",
+        "Client Communication"
+      ]
+    }
+  ],
+
+  "administration": {
+    "stats": {
+      "users": 1240,
+      "courses": 86,
+      "instructors": 32,
+      "systemHealth": "99%"
+    },
+    "settings": [
+      { "name": "User Registration", "enabled": true },
+      { "name": "Course Enrollment", "enabled": true },
+      { "name": "Maintenance Mode", "enabled": false }
+    ],
+    "roles": [
+      "Admin – Full Access",
+      "Instructor – Course Control",
+      "Student – Learning Access"
+    ]
+  }
+}
